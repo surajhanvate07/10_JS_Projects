@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "Poppins",sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+input {
+    background-color:rgba(18, 2, 54, 0.767);
+    border-radius: 10px;
+    color: white;
+    border: solid rgba(255, 255, 255, 0.24);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+input:focus {
+    outline: none;
+}
+
+.card {
+    background-image: linear-gradient( 109.6deg,  rgb(155, 10, 10) 11.2%, rgb(37, 6, 75) 92.5% );
+    display: flex;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.295),
+        0 15px 40px rgba(0, 0, 0, 0.911);
+    max-width: 800px;
+}
+
+.avatar {
+    border: 10px solid rgba(209, 51, 30, 0.089);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+.user-info {
+    color: white;
+    margin-left: 2rem;
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+.user-info ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 300px;
+    list-style-type: none;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+
+.info {
+    color: burlywood;
+}
+
+.repo {
+    background-color: #09094969;
+    border-radius: 5px;
+    display: inline-block;
+    color: rgba(61, 214, 219, 0.863);
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
