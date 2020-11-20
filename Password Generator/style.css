@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "Poppoins",sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-height: 100vh;
+}
+
+.pw-container {
+    background-color:rgba(14, 3, 39, 0.767);
+    min-width: 400px;
+    border-radius: 20px;
+    border: solid 1px rgb(126, 103, 103);
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.295),
+        0 15px 40px rgba(0, 0, 0, 0.911);
+}
+
+.pw-header {
+    padding: 1rem;
+}
+
+.pw {
+    background-color: rgb(48, 4, 92);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.pw button{
+    background-color: rgb(33, 4, 61);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    padding: 0.25rem;
+    width: 50px;
+    height: 30px;
+    font-family: inherit;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0,20%);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    opacity: 0;
+}
+
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0,0%);
+}
+
+.pw-body {
+    padding: 0 1rem 1rem;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+}
+
+.generate {
+    /* background-image: linear-gradient( 109.6deg,  rgb(155, 10, 10) 11.2%, rgb(37, 6, 75) 92.5% ); */
+    background-color: #09094969;
+    border: none;
+    color: rgba(61, 214, 219, 0.863);
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.generate:hover {
+    color: red;
+    background-color: rgb(33, 4, 61);
+}
